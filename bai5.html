@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 5</title>
+</head>
+<body>
+<p>Nhập kí tự:
+  <input type="text" id="input1" placeholder="Nhập vào đây">
+</p>
+<p>Nhập lại kí tự:
+  <input type="text" id="input2" placeholder="Nhập lại">
+</p>
+<button onclick="tEst()">Kiểm tra</button>
+<p id="output"></p>
+<script>
+  function tEst(){
+    let input1 = document.getElementById('input1').value;
+    let input2 = document.getElementById('input2').value;
+    let text;
+    if (input1 === input2){
+      text = "Bạn đã nhập đúng";
+    }
+    else {
+      text = "Bạn đã nhập sai"
+    }
+    document.getElementById('output').innerHTML = text;
+  }
+</script>
+</body>
+</html>

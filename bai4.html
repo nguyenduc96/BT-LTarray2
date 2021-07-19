@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 4</title>
+</head>
+<body>
+<input type="text" id="input" placeholder="Nhập vào đây">
+<button onclick="kiTu()">Đếm kí tự</button>
+<p id="output"></p>
+<script>
+    function kiTu(){
+        let strings = document.getElementById('input').value;
+        strings.length;
+        document.getElementById('output').innerText = "Bạn vừa nhập : " + strings.length + ' kí tự';
+    }
+
+</script>
+</body>
+</html>

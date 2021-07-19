@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 6</title>
+</head>
+<body>
+<input type="text" id="input" placeholder="Nhập vào đây">
+<button onclick="rUn()">Run</button>
+<p id="output"></p>
+<script>
+    function rUn(){
+        let a = document.getElementById('input').value;
+        let b = a.split('');
+        for (let i = 0; i < b.length; i++) {
+            if (b[i] == '-'){
+                b.splice(i, 1, '_')
+            }
+        }
+    document.getElementById('output').innerHTML = b.join('');
+}
+</script>
+</body>
+</html>
